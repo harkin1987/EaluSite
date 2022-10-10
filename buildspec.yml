@@ -8,8 +8,10 @@ phases:
       - mkdir build/sitefiles
       - mkdir build/scripts
       - cp -R sitefiles/* build/sitefiles/
-      - cp -R scripts/ build/scripts/
-      - zip -qr build-output.zip build/*
+      - cp -R scripts/* build/scripts/
+      - cp appspec.yml build/
+      - cd build/
+      - zip -qr build-output.zip ./*
   post_build:
     commands:
       - echo Build completed on `date`
