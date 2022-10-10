@@ -5,10 +5,9 @@ phases:
     commands:
       - echo Build started on `date`
       - mkdir build
-      - cp -R sitefiles/* build
+      - cp -R sitefiles/* build/
       - cd build/
       - zip -qr build-output.zip ./*
-      - mv build-output.zip ../
   post_build:
     commands:
       - echo Build completed on `date`
