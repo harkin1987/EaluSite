@@ -1,0 +1,289 @@
+/* IMPORT OTHER CSS  */
+@import "./bootstrap/bootstrap.min.css"; /* BOOTSTRAP 4 */
+@import "./bootstrap/lightbox.min.css"; /* GALLERY LIGHTBOX */
+@import "./bootstrap/hover-min.css"; /* GALLERY HOVER EFFECT - http://ianlunn.github.io/Hover/ */
+@import "./bootstrap/modal-video.min.css"; /* EMBEDDED YOUTUBE VIDEO */
+@import "./bootstrap/all.min.css"; /* FONTAWESOME */
+@import "./bootstrap/animate.min.css"; /* ANIMATE CSS dependancy for WOW.js*/
+
+/* IMPORT CUSTOM FONTS*/
+@font-face {
+    font-family: 'victors_pixel';
+    src: url('../fonts/victor-pixel-webfont.woff2') format('woff2'),
+         url('../fonts/victor-pixel-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* CUSTOM CSS */
+body {
+    font-family: 'victors_pixel';
+    color: white;
+    padding-top: 62px !important;
+}
+
+/* NavBar Anchor Link Padding */
+
+#about {
+    padding-top: 30px !important;
+}
+
+#gallery {
+    padding-top: 62px !important;
+}
+
+#portfolio{
+    padding-top: 62px !important;
+}
+
+#presskit {
+    padding-top: 62px !important;
+}
+
+
+
+/***** NAVBAR *****/
+
+.navbar {
+	background: rgba(0, 0, 0, 1);
+	-o-transition: all .6s; -moz-transition: all .6s; -webkit-transition: all .6s; -ms-transition: all .6s; transition: all .6s;
+    backface-visibility: hidden;
+    box-shadow: 0px 12px 9px -1px rgba(255,110,255,0.12);
+	min-height: 62px;
+}
+
+.navbar-dark .navbar-nav { font-size: 20px; color: #fff; font-weight: 0; }
+.navbar-dark .navbar-nav .nav-link { color: #fff; color: rgba(255, 255, 255, 0.9); border: 0; }
+.navbar-dark .navbar-nav .nav-link:hover { color: #f150b4; }
+.navbar-dark .navbar-nav .nav-link:focus { color: #f150b4; outline: 0; }
+.navbar-expand-md .navbar-nav .nav-link { padding-left: 1rem; padding-right: 1rem; }
+
+.navbar-brand {
+	width: 136px;
+    background: url(../images/nav_logo.png) left center no-repeat;
+	border: 0;
+	text-indent: -99999px;
+}
+
+
+/***** [HEADER] *****/
+html {
+    scroll-behavior: smooth;
+  }
+.header {
+    margin-top: 0px;
+    background: black url(../images/header_bg.jpg) no-repeat 75% center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+/* [HEADER] Logo */
+
+
+.header-logo img {
+    margin-top: 80px;
+    margin-bottom: 30px;
+    width: 100%; 
+    max-width: 1000px;
+}
+
+/* [HEADER] YouTube Video */
+
+.youtube-video {
+    margin-bottom: 50px;
+    
+}
+
+.youtube-video .js-video-button {
+        background-image: url("../images/youtube-image.png");
+        background-repeat: no-repeat;
+        /* height and width of image below */
+        height: 150px;
+        width: 250px;
+        border: none;
+}
+      
+.youtube-video button span {
+        display: none;
+}
+
+/* [HEADER] Steam Button */
+.steam-link {
+    margin-bottom: 70px;
+}
+
+.steam-link .btn-primary {
+    opacity: 80%;
+    color: blueviolet;
+    padding-bottom: 17px;
+    background-color: #440d4a;
+    border-color: #f150b4;
+}
+
+.steam-link .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: blueviolet;
+    background-color: #00b3db;
+    border-color: #285e8e; /*set the color you want here*/
+}
+
+/* [ABOUT] */
+.about {
+
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}  
+
+.about h1 {
+    font-size: 40px;
+    color: #f150b4;
+}
+
+/***** [GALLERY] *****/ 
+
+.gallery {
+    color: black;
+    background: whi;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+/* [GALLERY] Lightbox */
+.lightbox .lb-image {
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    box-shadow: 0px 10px 36px -7px rgba(219,24,219,1);
+}
+
+.row-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column-gallery {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column-gallery img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column-gallery {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column-gallery {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+
+/***** [NEWSLETTER] *****/
+
+
+.newsletter-bg {
+    padding-top: 30px;
+    padding-bottom: 40px;
+    background-image: linear-gradient(to top, #52256b 0%, #491d3a 100%);
+    
+}
+
+.newsletter h3 {
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.newsletter-input {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.newsletter input {
+    text-align: center;
+}
+
+.newsletter .btn-primary {
+    color: blueviolet;
+    padding-bottom: 17px;
+    background-color: #440d4a;
+    border-color: #f150b4;
+}
+
+.newsletter .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: blueviolet;
+    background-color: #00b3db;
+    border-color: #285e8e; 
+}
+
+.newsletter-icon {
+    line-height: 27px;
+    display:inline-block;
+    text-align: center;
+    vertical-align: bottom;
+
+}
+
+
+
+/***** [FOOTER] *****/
+
+footer {
+	padding: 10px 0 0px 0;
+	background: black;
+	color: #aaa;
+    text-align: left;
+
+}
+
+.footer-left a { color: #ddd; border-bottom: 1px dashed #ddd; }
+.footer-left a:hover, .footer-left a:focus { color: #ddd; border: 0; }
+
+.footer-right {
+    line-height: 27px;
+    display:inline-block;
+    text-align: right;
+    vertical-align: bottom;
+}
+
+.footer-right a {
+	margin: 0 6px;
+    font-size: 18px;
+    color: #aaa;
+}
+.footer-right a:hover, .footer-right a:focus { color: #f150b4; }
+
+.footer-bottom {
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.footer-bottom a {
+	font-size: 32px;
+    color: #666;
+    line-height: 40px;
+}
+
+.footer-bottom a:hover, .footer-bottom a:focus { color: #888; }

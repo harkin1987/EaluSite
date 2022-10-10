@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-105970241-2"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'UA-105970241-2');
+		</script>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Éalú Game</title>
+		<!-- CSS inc. FONTS -->
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<!-- jquery -->
+		<script src="./assets/js/jquery/jquery-3.4.1.min.js"></script>
+		<script src="./assets/js/jquery/jquery-2.2.4.min.js"></script>
+	</head>
+
+  <body>
+
+
+    <!-- [NAV BAR] -->
+
+    <nav class="navbar navbar-dark fixed-top navbar-expand-md navbar-no-bg">
+        <div class="container">
+            <a class="wow rollIn navbar-brand" href="index.html">Éalú</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="#gallery">Screenshots</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link scroll-link" href="https://signup.voxpopgames.net">VOXPOP-SIGNUP</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+        
+    
+    <!-- [HEADER] -->
+
+    <div class="header">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-end">
+                <!-- [HEADER] Logo -->
+                <div class="header-logo">
+                    <img class="" src="./assets/images/header_logo.png" alt="placeholder_logo">
+                </div>
+                <!-- [HEADER] YouTube Video -->
+                
+                <div class="youtube-video">
+                    <button class="js-video-button" data-video-id='KbBIlm2pTFk'>
+                        <span>Youtube</span> 
+                    </button>
+                    <!-- <script
+                        src="./assets/js/jquery/jquery-2.2.4.min.js"
+                        integrity=""
+                        crossorigin="anonymous"></script>  -->
+                        <script src="./assets/js/jquery/jquery-modal-video.min.js"></script> 
+                        <script>
+                            $(".js-video-button").modalVideo({
+                                youtube:{
+                                    controls:0,
+                                    nocookie: true,
+                                    start: 1,
+                                }
+                            });
+                    </script>
+               </div>
+
+                <!-- [HEADER] Steam Button -->
+                <div class="steam-link">
+                    <button type="button" class="btn btn-primary btn-lg" onclick="location.href='https://signup.voxpopgames.net'">
+                        COMING SOON TO VOXPOP
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <!-- [ABOUT]  -->
+    <div class="about" id="about">
+        <div class="container">
+            <div class="row">            
+                <div class="col">
+                    
+                    
+                    <h1>About éalú</h1>
+                    <p>
+                        Ealu is a classic side scrolling adventure created by you. The in-game level builder allows you to unleash your creative potential and share it with the world.
+                    </p>
+                    <p>
+                        If creation isn't your thing you can jump in to online mode and experience other creations through 100 lives mode or the level browser
+                    </p>
+                    <p>
+                        - Level Builder <br />
+                        - 60+ level components and game objects (With more on the way)<br />
+                        - Level browser<br />
+                        - 100 Lives Online mode<br />
+                        - Custom Physics for a true retro feel<br />
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- [GALLERY] -->
+
+    <div class="container" >
+        <div class="gallery gallery-container" id="gallery">
+            <div class="row-gallery">
+                
+                <div class="column-gallery">
+                        <a class="image-gallery" href="./assets/images/gallery/01.png" data-lightbox="eanu-set" data-title="">
+                            <img class="thumbnail img-fluid hvr-shrink hvr-shrink" src="./assets/images/gallery/01.png" alt=""/>
+                        </a>
+                        <a class="image-gallery" href="./assets/images/gallery/02.png" data-lightbox="eanu-set" data-title="">
+                            <img class="thumbnail img-fluid hvr-shrink" src="./assets/images/gallery/02.png" alt="" />
+                        </a>
+                        <a class="image-gallery" href="./assets/images/gallery/03.png" data-lightbox="eanu-set" data-title="">
+                            <img class="thumbnail img-fluid hvr-shrink" src="./assets/images/gallery/03.png" alt="" />
+                        </a>
+                    
+                </div>
+
+                <div class="column-gallery">
+                    <a class="image-gallery" href="./assets/images/gallery/04.png" data-lightbox="eanu-set" data-title="">
+                        <img class="thumbnail img-fluid hvr-shrink" src="./assets/images/gallery/04.png" alt="" />
+                    </a>
+                    <a class="image-gallery" href="./assets/images/gallery/05.png" data-lightbox="eanu-set" data-title="">
+                        <img class="thumbnail img-fluid hvr-shrink" src="./assets/images/gallery/05.png" alt=""/>
+                    </a>
+                    <a class="image-gallery" href="./assets/images/gallery/06.png" data-lightbox="eanu-set" data-title="">
+                        <img class="thumbnail img-fluid hvr-shrink" src="./assets/images/gallery/06.png" alt="" />
+                    </a>
+                </div>
+
+                <div class="column-gallery">
+                    <a class="image-gallery" href="./assets/images/gallery/07.png" data-lightbox="eanu-set" data-title="">
+                        <img class="thumbnail img-fluid hvr-shrink" src="./assets/images/gallery/07.png" alt=""/>
+                    </a>
+                    <a class="image-gallery" href="./assets/images/gallery/08.png" data-lightbox="eanu-set" data-title="">
+                        <img class="thumbnail img-fluid hvr-shrink" src="./assets/images/gallery/08.png" alt="" />
+                    </a>
+                    <a class="image-gallery" href="./assets/images/gallery/09.png" data-lightbox="eanu-set" data-title="">
+                        <img class="thumbnail img-fluid hvr-shrink" src="./assets/images/gallery/09.png" alt=""/>
+                    </a>
+                </div>
+
+                <div class="column-gallery">
+                    <a class="image-gallery" href="./assets/images/gallery/10.png" data-lightbox="eanu-set" data-title="">
+                        <img class="thumbnail img-fluid hvr-shrink" src="./assets/images/gallery/10.png" alt="" />
+                    </a>           
+                    <a class="image-gallery" href="./assets/images/gallery/11.png" data-lightbox="eanu-set" data-title="">
+                        <img class="thumbnail img-fluid hvr-shrink" src="./assets/images/gallery/11.png" alt=""/>
+                    </a>            
+                    <a class="image-gallery" href="./assets/images/gallery/12.png" data-lightbox="eanu-set" data-title="">
+                        <img class="thumbnail img-fluid hvr-shrink" src="./assets/images/gallery/12.png" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- [NEWSLETTER] -->
+
+    <div class="newsletter">
+        <div class="newsletter-bg text-center">
+            <div class="container p-3">
+                <h3>get news on updates</h3>
+                    <form action="https://EaluGame.us19.list-manage.com/subscribe/post?u=6ada378752052463c5cf724d0&amp;id=404aa2abee" method="Post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                        <input class="email newsletter-input" type="email" value="" name="EMAIL" id="mce-EMAIL" placeholder="email address" required><br>
+                            <button class="btn btn-primary btn-lg" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+                                Subscribe
+                                <div class="newsletter-icon">
+                                    <i class="fa fa-envelope"></i>    
+                                </div>
+                            </button>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_6ada378752052463c5cf724d0_404aa2abee" tabindex="-1" value=""></div>
+                    </form>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- [FOOTER] -->
+
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+                    <div class="col-md-5 footer-left">
+                    	<p>Harki Games Ltd.</p>
+                    </div>
+                    <div class="col-md-6 offset-md-1 footer-right">
+						<a href="https://twitter.com/HarkiGames"><i class="fab fa-twitter"></i></a>
+						<a href="mailto:contact@ealugame.com"><i class="fas fa-envelope-square"></i>Contact</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JS -->
+        <script src="./assets/js/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/bootstrap/lightbox.min.js"></script>
+        <script src="./assets/js/bootstrap/modal-video.min.js"></script>
+        <script src="./assets/js/bootstrap/all.min.js"></script>
+        <script src="./assets/js/bootstrap/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script>
+            $(".pic").hover(
+            function(){
+            $(".info", this).css("display", "block");
+            }, function(){
+            $(".info", this).css("display", "none");
+        });
+        </script>
+
+  </body>
+</html>

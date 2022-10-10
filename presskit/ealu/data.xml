@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<game>
+	<title>Ealu</title>
+	<release-date>Q3 2020</release-date>
+	<website>http://www.EaluGame.com/</website>
+	<press-can-request-copy>TRUE</press-can-request-copy>
+
+	<platforms>
+		<platform>
+			<name>Steam - PC</name>
+			<link>https://store.steampowered.com/app/1133800/</link>
+		</platform>
+	</platforms>
+	
+	<prices>
+		<price>
+			<currency>USD</currency>
+			<value>$4.99</value>
+		</price>
+		<price>
+			<currency>EUR</currency>
+			<value>€3.99</value>
+		</price>
+		<price>
+			<currency>CAD</currency>
+			<value>$5.69</value>
+		</price>				
+		<price>
+			<currency>GBP</currency>
+			<value>£3.99</value>
+		</price>
+	</prices>
+
+	<description>
+	Ealu is a pure platformer that allows players to create and share their own levels. With over 60 level building components 
+	</description>
+	
+	<history>	The idea for this game was brought about when googling "Super Mario Maker alternative for PC". A pure platformer that allowed you to create your own levels, share them, play other creations and all without silly gimmicks. 		Nothing existed and so this project was born. Ealu has been in development for approx. 1.5 years. Built using the Unity Engine and currently aimed at PC only with hopes of migrating to Mac, PS4 and Xbox consoles in future. Dependant on success of the Steam launch.
+	</history>
+
+	<features>
+		<feature>In game level editor.</feature>
+		<feature>Custom physics engine for a true retro feel.</feature>
+		<feature>60+ Level building components.</feature>
+		<feature>Level sharing and exploring.</feature>
+		<feature>100 Lives mode - Battle your way through 10 random user levels with 100 lives.</feature>
+	</features>
+	
+	<trailers>
+		<trailer>
+			<name>Teaser Trailer</name>
+			<youtube>sS-iwiRqoKw</youtube>
+		</trailer>
+	</trailers>
+	<!--
+	<awards>
+		<award>
+			<description>Winner in this highly relevant contest.</description>
+			<info>Award Location, 20 October, 1989</info>
+		</award>
+	</awards>-->
+	<!---
+	<quotes>
+		<quote>
+			<description>This is a rather insignificant quote by a highly important person.</description>
+			<name>Person Name</name>
+			<website>Website</website>
+			<link>http://</link>
+		</quote>
+		<quote>
+			<description>An extremely positive quote from a rather insignificant person. Also great.</description>
+			<name>Some Guy</name>
+			<website>This Page Is Visited By 12 Visitors A Month</website>
+			<link>http://</link>
+		</quote>
+		<quote>
+			<description>I pretend to love this game even though I do not actually understand it.</description>
+			<name>Pretentious Bastard</name>
+			<website>Artsy Page</website>
+			<link>http://</link>
+		</quote>
+		<quote>
+			<description>HOLY SHIT SO AMAZING</description>
+			<name>Caps Guy</name>
+			<website>Angry Review</website>
+			<link>http://</link>
+		</quote>
+	</quotes>-->
+	<!--
+	<additionals>
+		<additional>
+			<title>Original Soundtrack</title>
+			<description>Available for free from</description>
+			<link>http://somemusicsite.com/thislink</link>
+		</additional>
+		<additional>
+			<title>Release Blog Post</title>
+			<description>The blog-post through which this game was released is available at</description>
+			<link>http://vlambeer.com/bloglink</link>
+		</additional>
+	</additionals>-->
+	
+	<credits>
+		<credit>
+			<person>Anthony Harkin</person>
+			<role>Lead Developer</role>
+		</credit>
+		<credit>
+			<person>Brandon Rodriguez</person>
+			<role>Contracted Artist</role>
+		</credit>
+	</credits>
+</game>
