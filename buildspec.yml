@@ -4,16 +4,10 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - mkdir build
-      - mkdir build/sitefiles
-      - mkdir build/scripts
-      - cp -R sitefiles/* build/sitefiles/
-      - cp -R scripts/* build/scripts/
-      - cp appspec.yml build/
-      - cd build/ && zip -qr build-output.zip *
+      - zip -qr build-output.zip *
   post_build:
     commands:
       - echo Build completed on `date`
 artifacts:
   files:
-    - build/build-output.zip
+    - build-output.zip
