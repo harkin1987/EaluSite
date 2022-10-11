@@ -1,8 +1,8 @@
-version: 0.0
+version: 0.1
 os: linux
 files:
   - source: sitefiles/
-    destination: /var/www/html/
+    destination: /var/www/ealugame.com/
 hooks:
   ApplicationStop:
     - location: scripts/stop_server.sh
