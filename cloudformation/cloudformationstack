@@ -3,16 +3,31 @@ Parameters:
   SecurityGroupDescription:
     Description: Security Group to allow access from ports 80 and 443
     Type: String
+  SSHKey:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
+
 Resources:
   MyInstance:
     Type: AWS::EC2::Instance
     Properties:
+      KeyName: !Ref SSHKey
       AvailabilityZone: eu-west-1a
-      ImageId: ami-0c301b9bdd96778fc
+      ImageId: ami-0c1f3a8058fde8814 # CentOS 7
       InstanceType: t2.micro
       SecurityGroups:
         - !Ref SSHSecurityGroup
         - !Ref ServerSecurityGroup
+      # we install our web server with user data
+      UserData: 
+        Fn::Base64: |
+          #!/bin/bash -xe
+          yum update -y
+          yum install -y httpd
+          systemctl start httpd
+          systemctl enable httpd
+          echo "Hello World from user data" > /var/www/html/index.html
+
   SSHSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
