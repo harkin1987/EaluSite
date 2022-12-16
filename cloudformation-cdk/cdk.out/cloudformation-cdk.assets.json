@@ -1,0 +1,19 @@
+{
+  "version": "22.0.0",
+  "files": {
+    "66af8bf9755bd47dda9e5783a6366112b624f3c4e5f860d5af2080e9b85c0684": {
+      "source": {
+        "path": "cloudformation-cdk.template.json",
+        "packaging": "file"
+      },
+      "destinations": {
+        "current_account-current_region": {
+          "bucketName": "cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}",
+          "objectKey": "66af8bf9755bd47dda9e5783a6366112b624f3c4e5f860d5af2080e9b85c0684.json",
+          "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-file-publishing-role-${AWS::AccountId}-${AWS::Region}"
+        }
+      }
+    }
+  },
+  "dockerImages": {}
+}

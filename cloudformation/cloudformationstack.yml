@@ -18,12 +18,12 @@ Resources:
       UserData: 
         Fn::Base64: |
           #!/bin/bash -xe
-          yum update -y
-          yum install -y httpd git
-          systemctl start httpd
-          systemctl enable httpd
+          sudo yum update -y
+          sudo yum install -y httpd git
+          sudo systemctl start httpd
+          sudo systemctl enable httpd
           git clone https://github.com/harkin1987/EaluSite.git
-          cp -rT ./EaluSite/sitefiles/ /var/www/html/
+          sudo cp -rT ./EaluSite/sitefiles/ /var/www/html/
   HTTPSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
