@@ -22,8 +22,8 @@ Resources:
           yum install -y httpd
           systemctl start httpd
           systemctl enable httpd
-          echo "Hello World from user data" > /var/www/html/index.html
-
+          git clone https://github.com/harkin1987/EaluSite.git
+          cp -rT ./EaluSite/sitefiles/ /var/www/html/
   HTTPSecurityGroup:
     Type: AWS::EC2::SecurityGroup
     Properties:
