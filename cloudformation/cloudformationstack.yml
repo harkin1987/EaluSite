@@ -1,0 +1,39 @@
+---
+Parameters:
+  SSHKey:
+    Type: AWS::EC2::KeyPair::KeyName
+    Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
+
+Resources:
+  MyInstance:
+    Type: AWS::EC2::Instance
+    Properties:
+      KeyName: !Ref SSHKey
+      AvailabilityZone: eu-west-1a
+      ImageId: ami-0c1f3a8058fde8814 # CentOS 7
+      InstanceType: t2.micro
+      SecurityGroups:
+        - !Ref HTTPSecurityGroup
+      # we install our web server with user data
+      UserData: 
+        Fn::Base64: |
+          #!/bin/bash -xe
+          yum update -y
+          yum install -y httpd
+          systemctl start httpd
+          systemctl enable httpd
+          git clone https://github.com/harkin1987/EaluSite.git
+          cp -rT ./EaluSite/sitefiles/ /var/www/html/
+  HTTPSecurityGroup:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: Security Group to allow access from ports 80 and 443
+      SecurityGroupIngress:
+      - IpProtocol: tcp
+        FromPort: 80
+        ToPort: 80
+        CidrIp: 0.0.0.0/0
+      - IpProtocol: tcp
+        FromPort: 443
+        ToPort: 443
+        CidrIp: 0.0.0.0/0
